@@ -2,7 +2,7 @@
 
 %define name python-cjson
 %define version 1.0.5
-%define release %mkrel 4
+%define release %mkrel 5
 
 Summary: A very fast JSON encoder/decoder for Python 
 Name: %{name}
