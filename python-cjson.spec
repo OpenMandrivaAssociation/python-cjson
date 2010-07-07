@@ -2,13 +2,14 @@
 
 %define name python-cjson
 %define version 1.0.5
-%define release %mkrel 5
+%define release %mkrel 6
 
 Summary: A very fast JSON encoder/decoder for Python 
 Name: %{name}
 Version: %{version}
 Release: %{release}
 Source0: http://pypi.python.org/packages/source/p/%{name}/%{name}-%{version}.tar.gz
+Patch0: python-cjson-1.0.5-CVE-2010-1666.patch
 License: LGPL
 Group:   Development/Python
 Url:     http://www.ag-projects.com/
@@ -32,6 +33,7 @@ is the the range of 10-200 times for encoding operations and in the range of
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 
