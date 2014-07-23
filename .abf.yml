@@ -1,2 +1,4 @@
+removed_sources:
+  python-cjson-1.0.5.tar.gz: a00519debfdc6dcc33acfe68dc10ee4866fdcd8b
 sources:
-  "python-cjson-1.0.5.tar.gz": a00519debfdc6dcc33acfe68dc10ee4866fdcd8b
+  python-cjson-1.1.0.tar.gz: cf659560b1e31c600dde1dd785c7740a35167435
