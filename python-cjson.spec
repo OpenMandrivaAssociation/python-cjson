@@ -1,15 +1,11 @@
 # TODO try to integrate the testsuite ?
-
-%define name python-cjson
-%define version 1.0.5
-%define release 7
+%define oname python-cjson
 
 Summary: A very fast JSON encoder/decoder for Python 
-Name: %{name}
-Version: %{version}
-Release: %{release}
-Source0: http://pypi.python.org/packages/source/p/%{name}/%{name}-%{version}.tar.gz
-Patch0: python-cjson-1.0.5-CVE-2010-1666.patch
+Name: python2-cjson
+Version: 1.1.0
+Release: 1
+Source0: http://pypi.python.org/packages/source/p/%{oname}/%{oname}-%{version}.tar.gz
 License: LGPL
 Group:   Development/Python
 Url:     http://www.ag-projects.com/
@@ -32,23 +28,18 @@ is the the range of 10-200 times for encoding operations and in the range of
 100-250 times for decoding operations.
 
 %prep
-%setup -q
-%patch0 -p1
+%setup -qn %{oname}-%{version}
+%apply_patches
 
 %build
 
 %install
-rm -rf %{buildroot}
-python setup.py install --root %{buildroot}
-
-%clean
-rm -rf %{buildroot}
+python2 setup.py install --root %{buildroot}
 
 %files
-%defattr(-,root,root)
 %doc README ChangeLog
-%{py_platsitedir}/cjson.so
-%{py_platsitedir}/*egg-info
+%{py2_platsitedir}/cjson.so
+%{py2_platsitedir}/*egg-info
 
 
 
