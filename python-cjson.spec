@@ -9,9 +9,10 @@ Source0: http://pypi.python.org/packages/source/p/%{oname}/%{oname}-%{version}.t
 License: LGPL
 Group:   Development/Python
 Url:     http://www.ag-projects.com/
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: python-devel
 Requires:      python
+%rename	python-cjson
+
 %description
 This module implements a very fast JSON encoder/decoder for Python.
 
