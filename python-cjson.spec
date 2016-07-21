@@ -9,7 +9,7 @@ Source0: http://pypi.python.org/packages/source/p/%{oname}/%{oname}-%{version}.t
 License: LGPL
 Group:   Development/Python
 Url:     http://www.ag-projects.com/
-BuildRequires: python-devel
+BuildRequires: python2-devel
 Requires:      python
 %rename	python-cjson
 
