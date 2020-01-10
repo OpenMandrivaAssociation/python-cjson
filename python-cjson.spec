@@ -30,7 +30,7 @@ is the the range of 10-200 times for encoding operations and in the range of
 
 %prep
 %setup -qn %{oname}-%{version}
-%apply_patches
+%autopatch -p1
 
 %build
 
