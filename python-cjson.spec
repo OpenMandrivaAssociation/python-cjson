@@ -8,7 +8,7 @@ Release: 1
 Source0: http://pypi.python.org/packages/source/p/%{oname}/%{oname}-%{version}.tar.gz
 License: LGPL
 Group:   Development/Python
-Url:     http://www.ag-projects.com/
+Url:     https://www.ag-projects.com/
 BuildRequires: python2-devel
 Requires:      python
 %rename	python-cjson
